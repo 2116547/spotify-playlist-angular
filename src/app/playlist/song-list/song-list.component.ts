@@ -23,4 +23,8 @@ export class SongListComponent implements OnInit {
   ngOnInit() {
   }
 
+  onSongDelete() {
+    // delete song, give name or id as paramiter
+  }
+
 }

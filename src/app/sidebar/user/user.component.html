@@ -1,7 +1,10 @@
-<div *ngIf="userLoggedIn === false">
-  <p style="color: red;">Not logged in</p>
-  <button class="btn btn-primary" (click)="onLogin()">Log in</button>
-  <button class="btn btn-success" (click)="onCreatAccount()">Create Account</button>
+<div *ngIf="userLoggedIn === false" class="box-blue">
+  <p style="color: dodgerblue; margin-left: -10px; margin-right: -10px;" align="center">Log in or create a new account</p>
+  <form action="">
+    <input type="text" id="userName" placeholder="Username..." style="width: 100%;"><br>
+  </form>
+  <button class="btn btn-primary btn-sm" (click)="onLogin()" style="background-color: dodgerblue; margin-right: 10px; margin-top: 10px">Log in</button>
+  <button class="btn btn-success btn-sm" (click)="onCreatAccount()" style="margin-top: 10px">Create Account</button>
 </div>
 <div *ngIf="userLoggedIn === true">
   <h4>Welcome, user</h4>

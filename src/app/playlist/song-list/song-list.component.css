@@ -21,6 +21,11 @@ tr:hover {
   cursor: pointer;
 }
 
+tr.hoverdelete:hover {
+  background-color: rgba(255, 33, 51, 0.47) !important;
+  cursor: pointer;
+}
+
 .table {
   background: #ffffff;
   color: #000000;

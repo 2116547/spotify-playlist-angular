@@ -4,6 +4,7 @@
     <th>Title</th>
     <th>Artist</th>
     <th>Album</th>
+    <th></th>
   </tr>
   </thead>
   <tbody>
@@ -11,6 +12,7 @@
       <td>{{song.songTitle}}</td>
       <td>{{song.songArtist}}</td>
       <td>{{song.songAlbum}}</td>
+      <td align="center" (click)="onSongDelete()"><span>X</span></td>
     </tr>
   </tbody>
 </table>
