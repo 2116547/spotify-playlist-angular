@@ -1,5 +1,23 @@
 <div class="row">
-  <div class="col-xs-12">
+  <div class="col-md-12">
     <app-song-item></app-song-item>
+
+    <table class="table table-dark table-striped table-hover">
+      <thead>
+      <tr>
+        <th>Title</th>
+        <th>Artist</th>
+        <th>Album</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let song of songs">
+        <td>{{song.songTitle}}</td>
+        <td>{{song.songArtist}}</td>
+        <td>{{song.songAlbum}}</td>
+      </tr>
+      </tbody>
+    </table>
+
   </div>
 </div>

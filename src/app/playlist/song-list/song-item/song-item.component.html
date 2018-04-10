@@ -1,0 +1,9 @@
+<a
+  href="#"
+  class="list-group-item clearfix"
+  *ngFor="let song of songs">
+  <div class="pull-left">
+    <h4 class="list-group-item-heading">{{'Title: ' + song.songTitle }}</h4>
+    <p class="list-group-item-text">{{'Artist: ' + song.songArtist }}</p>
+  </div>
+</a>
