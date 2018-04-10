@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { User } from 'user/user.component';
+import { UserComponent } from './user/user.component';
 
 @Component({
   selector: 'app-sidebar',

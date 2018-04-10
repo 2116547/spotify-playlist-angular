@@ -9,7 +9,7 @@ import { Playlist } from '../../playlist/playlist.model';
 export class PlaylistListComponent implements OnInit {
 
   playlists: Playlist[] = [
-    new Playlist('Playlist 1', 'Kutmuziek', '')
+    // new Playlist('Playlist 1', 'Kutmuziek', '')
   ];
 
   constructor() { }
