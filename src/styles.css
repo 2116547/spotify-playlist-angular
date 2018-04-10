@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  background-image: url("http://www.dreamtemplate.com/dreamcodes/bg_images/color/c21.jpg");
+}
+
+.box-blue {
+  overflow:hidden;
+  padding:20px;
+  border:2px solid dodgerblue;
+  background-color: white;
+  border-radius: 15px;
+}
