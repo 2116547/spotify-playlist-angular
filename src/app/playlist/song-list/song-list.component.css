@@ -1,0 +1,33 @@
+.table tr {
+  transition: background 0.01s ease-in;
+}
+
+th {
+  background-color: dodgerblue !important;
+  color: white;
+  font-weight: lighter;
+}
+
+td {
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f6f6f6;
+}
+
+tr:hover {
+  background-color: rgba(30, 144, 255, 0.47);
+  cursor: pointer;
+}
+
+.table {
+  background: #ffffff;
+  color: #000000;
+  font-size: 13px;
+}
+
+tr, th, td {
+  padding: 10px;
+  border: 0px !important;
+}
