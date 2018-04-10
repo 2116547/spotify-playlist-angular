@@ -1,7 +1,18 @@
 <div class="row">
   <div class="col-md-12">
-    <h4>Playlist Name</h4>
-    <p>Playlist Genre</p>
+    <div *ngIf="editPlaylist === false">
+      <h4>Playlist Name</h4>
+      <p style="margin-bottom: 2px">Playlist Genre</p>
+      <a href="#" (click)="onEditPlaylist()" style="font-size: 10px">Edit Playlist</a>
+    </div>
+    <div *ngIf="editPlaylist === true">
+      <form>
+        <input type="text" id="playlistName" placeholder="Playlist Name"><br>
+        <input type="text" id="playlistGenre" placeholder="Playlist Genre"><br>
+        <button class="btn btn-success btn-sm" (click)="onChangeSave()">Save Changes</button>
+        <button class="btn btn-warning btn-sm" (click)="onChangeCancel()">Cancel</button>
+      </form>
+    </div>
     <hr>
     <app-song-list></app-song-list>
   </div>
