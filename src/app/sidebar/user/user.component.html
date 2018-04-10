@@ -1,0 +1,10 @@
+<div *ngIf="userLoggedIn === false">
+  <p style="color: red;">Not logged in</p>
+  <button class="btn btn-primary" (click)="onLogin()">Log in</button>
+  <button class="btn btn-success" (click)="onCreatAccount()">Create Account</button>
+</div>
+<div *ngIf="userLoggedIn === true">
+  <h4>Welcome, user</h4>
+  <a href="#" (click)="onLogout()">Log out /</a>
+  <a href="#" (click)="onEditAccount()">Edit Account</a>
+</div>

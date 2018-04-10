@@ -1,5 +1,5 @@
 .table tr {
-  transition: background 0.01s ease-in;
+  transition: background 0.05s ease-in;
 }
 
 th {

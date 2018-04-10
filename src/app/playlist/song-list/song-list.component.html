@@ -1,25 +1,19 @@
-<div class="row">
-  <div class="col-md-12">
-    <app-song-item></app-song-item>
-
-    <table class="table">
-      <thead>
-      <tr>
-        <th>Title</th>
-        <th>Artist</th>
-        <th>Album</th>
-      </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let song of songs">
-          <td>{{song.songTitle}}</td>
-          <td>{{song.songArtist}}</td>
-          <td>{{song.songAlbum}}</td>
-        </tr>
-      </tbody>
-    </table>
-    <!--<app-song-item-->
-      <!--*ngFor="let song of songs"-->
-      <!--[song]="song"></app-song-item>-->
-  </div>
-</div>
+<table class="table">
+  <thead>
+  <tr>
+    <th>Title</th>
+    <th>Artist</th>
+    <th>Album</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let song of songs">
+      <td>{{song.songTitle}}</td>
+      <td>{{song.songArtist}}</td>
+      <td>{{song.songAlbum}}</td>
+    </tr>
+  </tbody>
+</table>
+<!--<app-song-item-->
+  <!--*ngFor="let song of songs"-->
+  <!--[song]="song"></app-song-item>-->
