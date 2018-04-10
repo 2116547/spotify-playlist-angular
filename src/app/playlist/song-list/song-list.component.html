@@ -1,0 +1,21 @@
+<table class="table">
+  <thead>
+  <tr>
+    <th>Title</th>
+    <th>Artist</th>
+    <th>Album</th>
+    <th></th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let song of songs">
+      <td>{{song.songTitle}}</td>
+      <td>{{song.songArtist}}</td>
+      <td>{{song.songAlbum}}</td>
+      <td align="center" (click)="onSongDelete()"><span>X</span></td>
+    </tr>
+  </tbody>
+</table>
+<!--<app-song-item-->
+  <!--*ngFor="let song of songs"-->
+  <!--[song]="song"></app-song-item>-->
