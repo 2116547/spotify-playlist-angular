@@ -8,6 +8,7 @@ import {Song} from './song.model';
 })
 export class SongListComponent implements OnInit {
 
+  // Dummy songs, moeten uit een playlist worden geladen
   songs: Song[] = [
     new Song('teststring', 'Testsong', 'testartiest', 'testalbum'),
     new Song('1234567', 'Heb Je Even Voor Mij', 'Frans Bauer', 'Frans Bauer, De Grootste Hits'),
@@ -24,7 +25,7 @@ export class SongListComponent implements OnInit {
   }
 
   onSongDelete() {
-    // delete song, give name or id as paramiter
+    // Song verwijderen uit playlist, is gekoppeld aan de delete knop naas het liedje
   }
 
 }

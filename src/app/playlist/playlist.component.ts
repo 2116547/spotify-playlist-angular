@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlaylistComponent implements OnInit {
 
+  // Boolean-property voor het weergeven of verbergen van de input velden en buttons
   editPlaylist = false;
 
   constructor() { }
@@ -24,6 +25,7 @@ export class PlaylistComponent implements OnInit {
 
   onChangeSave() {
     this.editPlaylist = false;
+    // Verstuur de inputs van de change velden naar de database
   }
 
 }
