@@ -1,14 +1,15 @@
 <div class="box-blue" style="margin-top: -30px; margin-bottom: 20px">
+  <h6 align="center" style="color: dodgerblue">My Playlists</h6>
   <table class="table">
     <thead>
-    <tr>
-      <th>My Playlists</th>
-    </tr>
+      <tr></tr>
     </thead>
-    <tbody>
-    <tr *ngFor="let plist of playlists">
-      <td>{{plist.playlistName}}</td>
-    </tr>
+    <tbody style="width: inherit">
+    <td *ngFor="let plist of playlists">
+      <!--<tr>{{plist.playlistName}}</tr>-->
+      <tr>test playlist</tr>
+      <tr>nog een test playlist</tr>
+    </td>
     </tbody>
   </table>
 </div>

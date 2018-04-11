@@ -12,6 +12,8 @@ import { SongItemComponent } from './playlist/song-list/song-item/song-item.comp
 import { PlaylistListComponent } from './sidebar/playlist-list/playlist-list.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { UserComponent } from './sidebar/user/user.component';
+import { SearchComponent } from './sidebar/search/search.component';
+import { SearchResultsComponent } from './search-results/search-results.component';
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import { UserComponent } from './sidebar/user/user.component';
     SongItemComponent,
     PlaylistListComponent,
     SidebarComponent,
-    UserComponent
+    UserComponent,
+    SearchComponent,
+    SearchResultsComponent
   ],
   imports: [
     BrowserModule,
