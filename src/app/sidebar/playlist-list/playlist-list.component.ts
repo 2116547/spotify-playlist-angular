@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import { Playlist } from '../../playlist/playlist.model';
+import { Playlist } from '../../shared/model/playlist.model';
 
 @Component({
   selector: 'app-playlist-list',
@@ -7,10 +7,6 @@ import { Playlist } from '../../playlist/playlist.model';
   styleUrls: ['./playlist-list.component.css']
 })
 export class PlaylistListComponent implements OnInit {
-
-  playlists: Playlist[] = [
-    new Playlist('Playlist 1', 'Kutmuziek')
-  ];
 
   constructor() { }
 

@@ -1,10 +1,9 @@
-import {Song} from './song.model';
-import {}
-// Song array moet nog toegevoegd worden als songList[Song]
-export class Playlist {
+import {Playlist} from './playlist.model';
+
+export class User {
   _id: number;
   userName:string;
-  userPlaylists: Song[];
+  userPlaylists: Playlist[];
 
   get id(): number {
     return this._id;
@@ -21,11 +20,11 @@ export class Playlist {
     this.userName = value;
   }
 
-  get _userPlaylists(): Song[] {
+  get _userPlaylists(): Playlist[] {
     return this.userPlaylists;
   }
 
-  set _userPlaylists(value: Song[]) {
+  set _userPlaylists(value: Playlist[]) {
     this.userPlaylists = value;
   }
   constructor(values: Object = {}) {

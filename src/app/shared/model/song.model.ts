@@ -25,7 +25,7 @@ export class Song {
     return this.songTitle;
   }
 
-  set _songArtist(value: number) {
+  set _songArtist(value: string) {
     this.songArtist = value;
   }
 

@@ -1,20 +1,10 @@
 import {Song} from './song.model';
-import {Playlist} from './playlist.model';
-// Song array moet nog toegevoegd worden als songList[Song]
+
 export class Playlist {
   _id: number;
   playlistName:string;
   playlistGenre: string;
-  playlistSongs: Playlist[];
-
-//   constructor(name: string, image: string, madeinyear: number, madeincountry: number,songs: Nummer[]) {
-//   this.name = _name;
-//   this._image = image;
-//   this._madeinyear = madeinyear;
-//   this._madeincountry = madeincountry;
-//   this._songs = songs;
-// }
-
+  playlistSongs: Song[];
   get id(): number {
     return this._id;
   }
